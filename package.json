@@ -2,7 +2,7 @@
   "name": "hw-03-image-finder",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ihorigor.github.io/goit-react-hw-03-image-finder/",
+  "homepage": "https://ihorigor.github.io/react-hw-03-image-finder/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -10,7 +10,6 @@
     "axios": "^1.2.2",
     "classnames": "^2.3.2",
     "date-fns": "^2.29.3",
-    "nanoid": "^3.3.4",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-confetti": "^6.1.0",
