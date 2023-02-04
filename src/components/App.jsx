@@ -4,6 +4,10 @@ export class App extends Component {
   state = {};
 
   render() {
-    return <></>;
+    return (
+      <div>
+        <h1>yhih</h1>
+      </div>
+    );
   }
 }
