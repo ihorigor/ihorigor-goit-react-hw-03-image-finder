@@ -10,20 +10,23 @@ import {
 } from './SearchBar.styled';
 // import PropTypes from 'prop-types'
 
-export const Searchbar = props => {
+export const Searchbar = ({ onSubmit, value, onChange }) => {
   return (
     <SearchBar>
-      <SearchForm>
+      <SearchForm onSubmit={onSubmit}>
         <SearchFormButton type="submit">
           <ImSearch />
           <SearchFormButtonLabel>Search</SearchFormButtonLabel>
         </SearchFormButton>
 
         <SearchFormInput
+          value={value}
+          name="query"
           type="text"
           autoComplete="off"
           autoFocus
           placeholder="Search images and photos"
+          onChange={onChange}
         />
       </SearchForm>
     </SearchBar>

@@ -5,12 +5,20 @@ import {
 } from './ImageGalleryItem.styled';
 // import PropTypes from 'prop-types'
 
-export const ImageGalleryItem = props => {
+export const ImageGalleryItem = ({ onModalOpen, onImgData }) => {
   return (
     <>
-      <ImageGalleryItemLI>
-        <ImageGalleryItemImage src="" alt="" />
-      </ImageGalleryItemLI>
+      {onImgData.hits.map(data => {
+        return (
+          <ImageGalleryItemLI key={data.id}>
+            <ImageGalleryItemImage
+              src={data.webformatURL}
+              alt={data.user}
+              onClick={onModalOpen}
+            />
+          </ImageGalleryItemLI>
+        );
+      })}
     </>
   );
 };

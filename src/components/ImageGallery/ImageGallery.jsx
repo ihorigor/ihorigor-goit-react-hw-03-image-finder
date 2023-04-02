@@ -3,10 +3,10 @@ import { ImageGalleryBox } from './ImageGallery.styled';
 import { ImageGalleryItem } from './ImageGalleryItem/ImageGalleryItem';
 // import PropTypes from 'prop-types'
 
-export const ImageGallery = props => {
+export const ImageGallery = ({ onModalOpen, onImgData }) => {
   return (
     <ImageGalleryBox>
-      <ImageGalleryItem></ImageGalleryItem>
+      <ImageGalleryItem onImgData={onImgData} onModalOpen={onModalOpen} />
     </ImageGalleryBox>
   );
 };
